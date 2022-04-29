@@ -1,1 +1,1 @@
-web: FLASK_APP=main.py flask run --host=0.0.0.0 --port=8080
+web: uwsgi --http :9090 --wsgi-file foobar.py
